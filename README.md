@@ -4,7 +4,8 @@ A collection of JavaScript interview riddles, exercises, and homework assignment
 
 # Contents
 
-JsPaint: JavaScript canvas exercise.
+- `JsPaint`: [JavaScript canvas exercise](http://www.zsoltnagy.eu/javascript-tech-interview-exercise-7-painting-on-an-html5-canvas/).
+- `PomodoroTracker`: Pomodoro tracker exercise.
 
 # Installation
 
