@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Pomodoro Timer - zsoltnagy.eu</title>
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="node_modules/rmodal/dist/rmodal.css" type="text/css" />
+        <script type="text/javascript" src="node_modules/rmodal/dist/rmodal.js"></script>        
+    </head>
+    <body>
+        <div class="kanban-board  js-kanban-board">
+        </div>
+        <div id="form-modal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">       
+                    <form class="js-add-task  form-horizontal" 
+                          action="javascript:void(0)">
+                        <input type="text" 
+                               name="task-name"
+                               class="js-task-name" 
+                               placeholder="Task Name" />
+                        <select name="pomodoro-count"
+                                class="js-pomodoro-count">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <input type="hidden"
+                               class="js-column-chooser"
+                               name="column-chooser" />          
+                        <input type="submit" class="js-add-task-submit" /> 
+                        <button class="js-add-task-cancel">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>   
+    <script src="js/pomodoro.js"></script>
+</html>

@@ -1,0 +1,57 @@
+form {
+    padding: 3rem;
+    background-color: #ddd;
+}
+
+.task-column {
+    width: 20rem;
+    background-color: #ccc;
+    border: 1px #333 solid;
+}
+
+.task-column__header {
+    width: 14rem;
+    margin: 1rem 1rem 0 1rem;
+    padding: 2rem;
+    background-color: #777;
+    color: #eee;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.task-column__body {
+    width: 16rem;
+    margin: 0 1rem 1rem 1rem;
+    padding: 0.8rem 1rem;
+    background-color: #999;
+    min-height: 2rem;
+}
+
+.task {
+    width: 12rem;
+    height: 3rem;
+    margin: 0.5rem 1rem;
+    background-color: #eee;
+    padding: 1rem;
+    user-select: none;
+}
+
+.task__name {
+    display: block;
+}
+
+.task__pomodori {
+    display: inline-block;
+    float: left;
+}
+
+.task__controls {
+    display: inline-block;
+    float: right;
+}
+
+.task-controls__icon {
+    cursor: pointer;
+}
+
+

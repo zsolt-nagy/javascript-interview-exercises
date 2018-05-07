@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Pomodoro Timer - zsoltnagy.eu</title>
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <div class="task-column">
+            <div class="task-column__header">Tasks</div>
+            <div class="task-column__body  js-task-column-body">             
+            </div>
+        </div>
+
+        <form class="js-add-task" 
+              action="javascript:void(0)">
+            <input type="text" 
+                   name="task-name"
+                   class="js-task-name" 
+                   placeholder="Task Name" />
+            <select name="pomodoro-count"
+                    class="js-pomodoro-count">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <input type="submit" />
+        </form>
+    </body>
+    <script src="js/pomodoro.js"></script>
+</html>
