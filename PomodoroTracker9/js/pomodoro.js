@@ -74,7 +74,7 @@ var updateTime = newTime => {
         saveAndRenderState();
     }
 }
-const timer = new Timer(/* 25 * 60*/5, updateTime );
+const timer = new Timer( 25 * 60, updateTime );
 document.querySelector( '.js-start-timer' )
         .addEventListener( 'click', () => timer.start() );
 document.querySelector( '.js-pause-timer' )
