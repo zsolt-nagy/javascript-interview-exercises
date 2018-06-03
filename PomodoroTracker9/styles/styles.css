@@ -75,10 +75,16 @@
 
 
 .timer {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
-    height: 100px;
-    width: 60px;
-    background-color: #882;
-    color: #ddd;
+    height: 150px;
+    width: 300px;
+    background-color: #ddd;
+    color: #333;
+    font-size: 2rem;
+}
+
+.timer__control:hover {
+    cursor: pointer;
+    color: red;
 }

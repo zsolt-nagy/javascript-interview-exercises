@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <title>Pomodoro Timer - zsoltnagy.eu</title>
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="node_modules/rmodal/dist/rmodal.css" type="text/css" />
+        <script type="text/javascript" src="node_modules/rmodal/dist/rmodal.js"></script>        
+    </head>
+    <body>
+        <div class="kanban-board  js-kanban-board">
+        </div>
+        <div id="form-modal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">       
+                    <form class="js-add-task  form-horizontal" 
+                          action="javascript:void(0)">
+                        <input type="text" 
+                               name="task-name"
+                               class="js-task-name" 
+                               placeholder="Task Name" />
+                        <select name="pomodoro-count"
+                                class="js-pomodoro-count">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <input type="hidden"
+                               class="js-column-chooser"
+                               name="column-chooser" />          
+                        <input type="submit" class="js-add-task-submit" /> 
+                        <button class="js-add-task-cancel">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="js-timer  timer">
+            <div class="js-selected-task-label  timer__task">
+                Select a Task
+            </div>
+            <div class="js-time-remaining  timer__time">25:00</div> 
+            <div class="js-links  timer__links">
+                <span class="js-start-timer  timer__control">
+                    &#x25B6;
+                </span>
+                <span class="js-pause-timer  timer__control">
+                    &#x23F8;
+                </span>
+                <span class="js-stop-timer  timer__control">
+                    &#x23F9;
+                </span>
+            </div> 
+        </div>
+    </body>   
+    <script src="js/pomodoro.dist.js"></script>
+</html>
